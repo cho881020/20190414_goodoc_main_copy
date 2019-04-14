@@ -1,5 +1,6 @@
 package com.tjeit.a20190414_goodoc_main_copy;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -42,6 +43,12 @@ public class LoginActivity extends AppCompatActivity {
                 if (userId.equals("tjeit") && userPw.equals("qwer1234")) {
 //                    아이디와 비번이 모두 올바르다!
 //                    MainActivity로 이동시켜주자!
+
+                    Intent intent = new Intent(LoginActivity.this, MainActivity.class);
+                    startActivity(intent);
+
+
+
                 }
                 else {
 //                    위에 조건이 아니라면!
